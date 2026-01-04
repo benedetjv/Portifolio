@@ -112,6 +112,10 @@ export default function Projetos() {
     '/img/techlearn-quiz-respostas.jpg',
   ]
 
+  const drOttoImgs = [
+    '/img/drotto-homepage.jpg'
+  ]
+
   return (
     <div className="projetos-page">
       <div className="container my-5">
@@ -122,7 +126,7 @@ export default function Projetos() {
             <Gallery images={furiaImgs} />
           </div>
           <div className="col-md-6">
-            <h4 className="fw-bold">Fúria Experience — Plataforma para fãs de esports</h4>
+            <h4 className="fw-bold">FURIA Experience - Plataforma para fãs da FURIA</h4>
             <small className="text-muted">2025</small>
             <p className="mt-2">
               Meu primeiro projeto em Python, nascido da vontade de unir minha paixão por CS com a migração para a área de tecnologia. O FURIA Experience é um chatbot conversacional e dashboard interativo desenvolvido para aproximar o torcedor da organização.
@@ -154,7 +158,7 @@ export default function Projetos() {
             <Gallery images={feiraImgs} />
           </div>
           <div className="col-md-6">
-            <h4 className="fw-bold">Feira — E-commerce de Produtos Agrícolas com Blockchain</h4>
+            <h4 className="fw-bold">Feira - E-commerce de Produtos Agrícolas com Blockchain</h4>
             <small className="text-muted">2025</small>
             <p className="mt-2">
               A FEIRA é uma plataforma digital inovadora que revoluciona a cadeia de suprimentos de alimentos, conectando consumidores diretamente a produtores rurais. Nosso foco é em produtos frescos, de qualidade e na garantia de transações éticas e transparentes através da tecnologia Blockchain.
@@ -195,7 +199,7 @@ export default function Projetos() {
             <Gallery images={getSafeImgs} />
           </div>
           <div className="col-md-6">
-            <h4 className="fw-bold">GetSafe — Segurança colaborativa urbana</h4>
+            <h4 className="fw-bold">GetSafe - Segurança colaborativa urbana</h4>
             <small className="text-muted">2025</small>
             <p className="mt-2">
               GetSafe é uma plataforma web colaborativa que conecta pessoas em situações de risco com quem pode ajudar e contato direto com órgãos responsáveis, durante desastres naturais como enchentes, chuvas extremas, calor intenso ou frio severo. A proposta é construir uma rede solidária digital que promova respostas rápidas e eficientes diante de eventos climáticos acentuados.
@@ -245,7 +249,7 @@ export default function Projetos() {
             <Gallery images={otisImgs} />
           </div>
           <div className="col-md-6">
-            <h4 className="fw-bold">Otis Sky Manage</h4>
+            <h4 className="fw-bold">Otis Sky Manage - Plataforma corporativa</h4>
             <small className="text-muted">2025</small>
 
             <p className="mt-2">
@@ -299,7 +303,7 @@ export default function Projetos() {
             <Gallery images={techLearnImgs} />
           </div>
           <div className="col-md-6">
-            <h4 className="fw-bold">TechLearn — Plataforma de Estudos em Tecnologia</h4>
+            <h4 className="fw-bold">TechLearn - Plataforma de Estudos em Tecnologia</h4>
             <small className="text-muted">2025</small>
             <p className="mt-2">
               A TechLearn é uma plataforma educacional desenvolvida em React para o aprendizado de diversas áreas da tecnologia, com cursos em vídeo, fóruns de discussão, certificados digitais, área de vagas e perfil do estudante.
@@ -330,6 +334,38 @@ export default function Projetos() {
                 rel="noreferrer"
               >
                 Repositório do projeto
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Dr. Otto Beckedorff — NOVO PROJETO */}
+        <div className="row g-5 align-items-start projeto mb-5">
+          <div className="col-md-6">
+            <Gallery images={drOttoImgs} />
+          </div>
+          <div className="col-md-6">
+            <h4 className="fw-bold">Dr. Otto Beckedorff - Website</h4>
+            <small className="text-muted">2025</small>
+            <p className="mt-2">
+              Website desenvolvido para médico especialista em Ortopedia e Tratamento da Dor. O projeto foca em alta performance e otimização para mecanismos de busca (SEO) através de tecnologias modernas de renderização.
+            </p>
+            <ul>
+              <li>SEO Avançado: Implementação de Dados Estruturados (JSON-LD) para visibilidade local.</li>
+              <li>Arquitetura Modular: Componentes React reutilizáveis integrados com o sistema de rotas do Next.js.</li>
+              <li>Performance: Otimização automática de imagens e carregamento de fontes do Google.</li>
+              <li>Gestão de Conteúdo: Centralização de textos em um arquivo de dados, facilitando atualizações.</li>
+              <li>Tecnologias: Next.js 14, React, Bootstrap 5, JSON-LD.</li>
+            </ul>
+            <div className="d-flex gap-2 mt-3">
+              <a
+                href="https://drotto.com.br/"
+                className="btn btn-sm text-white"
+                style={{ backgroundColor: '#000080' }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link do site
               </a>
             </div>
           </div>
