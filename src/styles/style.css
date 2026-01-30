@@ -1,5 +1,6 @@
 /* Estilo global */
-html, body {
+html,
+body {
   font-family: 'Inter', sans-serif;
   background-color: #f9f9f9;
   color: #111;
@@ -72,7 +73,7 @@ main {
 }
 
 /* Padding interno nos blocos do footer */
-footer .container > div {
+footer .container>div {
   padding: 12px 0;
 }
 
@@ -145,7 +146,7 @@ body.sobre-page.loaded {
   background-color: #fff;
   border-radius: 12px;
   padding: 2.5rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .curriculo-container h1 {
@@ -211,6 +212,18 @@ body.sobre-page.loaded {
   .curriculo-container h1 {
     font-size: 1.6rem;
   }
+
+
+
+  /* Ajuste no Nav */
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
 }
 
 /* Projetos */
@@ -262,13 +275,23 @@ body.sobre-page.loaded {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1 }
-  to { opacity: 0 }
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
 }
 
 /* Centralização da página de contato */
@@ -276,26 +299,32 @@ body.sobre-page.loaded {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh; /* altura mínima pra centralizar verticalmente */
-  background-color: #fafafa; /* combina com o visual atual */
+  min-height: 70vh;
+  /* altura mínima pra centralizar verticalmente */
+  background-color: #fafafa;
+  /* combina com o visual atual */
 }
 
 .form-container {
   background: #fff;
   padding: 2rem 2.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   width: 100%;
   max-width: 480px;
 }
 
 /* ===== Foto da Home ===== */
 .home-profile {
-  width: 200px;            /* tamanho fixo */
+  width: 200px;
+  /* tamanho fixo */
   height: 200px;
-  object-fit: cover;       /* corta a imagem sem distorcer */
-  border-radius: 50%;      /* deixa circular */
-  border: 3px solid #fff;  /* contorno branco sutil */
+  object-fit: cover;
+  /* corta a imagem sem distorcer */
+  border-radius: 50%;
+  /* deixa circular */
+  border: 3px solid #fff;
+  /* contorno branco sutil */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
 }

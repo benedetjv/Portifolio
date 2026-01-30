@@ -8,38 +8,43 @@ export default function App() {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <header className="p-4 d-flex justify-content-between align-items-center shadow bg-white">
-        <div>
-          <h1 className="h5 mb-0">João Vitor Benedet</h1>
-          <span className="text-muted">Estudante de Engenharia de Software</span>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow p-3 mb-4">
+        <div className="container">
+          <Link className="navbar-brand d-flex flex-column" to="/">
+            <span className="h5 mb-0 fw-bold">João Vitor Benedet</span>
+            <small className="text-muted" style={{ fontSize: '0.85rem' }}>Estudante de Engenharia de Software</small>
+          </Link>
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul className="navbar-nav gap-3 text-center mt-3 mt-lg-0">
+              <li className="nav-item">
+                <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active fw-bold' : ''}`}>Início</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/sobre" className={`nav-link ${location.pathname.startsWith('/sobre') ? 'active fw-bold' : ''}`}>Currículo</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/projetos" className={`nav-link ${location.pathname.startsWith('/projetos') ? 'active fw-bold' : ''}`}>Projetos</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contato" className={`nav-link ${location.pathname.startsWith('/contato') ? 'active fw-bold' : ''}`}>Contato</Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav className="d-flex gap-3">
-          <Link
-            to="/"
-            className={`text-decoration-none ${location.pathname === '/' ? 'fw-bold text-dark' : 'text-secondary'}`}
-          >
-            Início
-          </Link>
-          <Link
-            to="/sobre"
-            className={`text-decoration-none ${location.pathname.startsWith('/sobre') ? 'fw-bold text-dark' : 'text-secondary'}`}
-          >
-            Currículo
-          </Link>
-          <Link
-            to="/projetos"
-            className={`text-decoration-none ${location.pathname.startsWith('/projetos') ? 'fw-bold text-dark' : 'text-secondary'}`}
-          >
-            Projetos
-          </Link>
-          <Link
-            to="/contato"
-            className={`text-decoration-none ${location.pathname.startsWith('/contato') ? 'fw-bold text-dark' : 'text-secondary'}`}
-          >
-            Contato
-          </Link>
-        </nav>
-      </header>
+      </nav>
 
       <main className="container my-5 flex-grow-1">
         <Outlet />
