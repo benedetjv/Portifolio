@@ -113,7 +113,7 @@ export default function Projetos() {
   ]
 
   const drOttoImgs = [
-    '/img/drotto-homepage-1.jpg'
+    '/img/drotto-home-new.jpg'
   ]
 
   return (
