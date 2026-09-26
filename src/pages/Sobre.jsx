@@ -20,8 +20,8 @@ export default function Sobre() {
 
           <li>
             <strong>
-              <a href="https://www.instagram.com/teucoolusa/" target="_blank" rel="noreferrer">
-                TC USA
+              <a href="https://www.instagram.com/thecoolhaus/" target="_blank" rel="noreferrer">
+                The Cool Haus
               </a>
             </strong> — Gerente de CRM e Customer Experience. (Mai/2025 – Atual) <br />
             <small className="text-muted">Lake Park, Flórida (EUA)</small>
